@@ -3,15 +3,15 @@ import { styled } from "@mui/material/styles";
 import { DiceStyle } from "../types/DiceStyle";
 import { DiceType } from "../types/DiceType";
 
-//import * as myzbasePreviews from "./myzbase";
+import * as myzbasePreviews from "./myzbase";
 import * as myzskillPreviews from "./myzskill";
-//import * as myzgearPreviews from "./myzgear";
+import * as myzgearPreviews from "./myzgear";
 
 
 const previews: Record<DiceStyle, Record<DiceType, string>> = {
-  //MYZBASE: myzbasePreviews,
+  MYZBASE: myzbasePreviews,
   MYZSKILL: myzskillPreviews,
-  //MYZGEAR: myzgearPreviews,
+  MYZGEAR: myzgearPreviews,
 };
 
 interface PreviewImageProps {
