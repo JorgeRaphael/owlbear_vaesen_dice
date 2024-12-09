@@ -2,15 +2,15 @@ import { DiceSet } from "../types/DiceSet";
 import { DiceStyle } from "../types/DiceStyle";
 import { Die } from "../types/Die";
 
-import * as myzbasePreviews from "../previews/myzbase";
 import * as myzskillPreviews from "../previews/myzskill";
+import * as myzbasePreviews from "../previews/myzbase";
 import * as myzgearPreviews from "../previews/myzgear";
 
 import allPreview from "../previews/all.png";
 
 const standardPreviews: Record<DiceStyle, string> = {
-  MYZBASE: myzbasePreviews.D6,
   MYZSKILL: myzskillPreviews.D6,
+  MYZBASE: myzbasePreviews.D6,
   MYZGEAR: myzgearPreviews.D6,
 };
 
@@ -28,8 +28,8 @@ function createStandardSet(style: DiceStyle): DiceSet {
 
 const standardSets = [
 
-  createStandardSet ("MYZBASE"),
   createStandardSet ("MYZSKILL"),
+  createStandardSet ("MYZBASE"),
   createStandardSet ("MYZGEAR"),
 ];
 
