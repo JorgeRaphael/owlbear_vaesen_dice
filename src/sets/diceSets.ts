@@ -9,9 +9,9 @@ import * as myzgearPreviews from "../previews/myzgear";
 import allPreview from "../previews/all.png";
 
 const standardPreviews: Record<DiceStyle, string> = {
-  MYZBASE: myzbasePreviews.D6,
+  //MYZBASE: myzbasePreviews.D6,
   MYZSKILL: myzskillPreviews.D6,
-  MYZGEAR: myzgearPreviews.D6,
+  //MYZGEAR: myzgearPreviews.D6,
 };
 
 function createStandardSet(style: DiceStyle): DiceSet {
@@ -28,9 +28,9 @@ function createStandardSet(style: DiceStyle): DiceSet {
 
 const standardSets = [
 
-  //createStandardSet ("MYZBASE"),
+  createStandardSet ("MYZBASE"),
   createStandardSet ("MYZSKILL"),
-  //createStandardSet ("MYZGEAR"),
+  createStandardSet ("MYZGEAR"),
 ];
 
 const allSet: DiceSet = {
